@@ -1,0 +1,135 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    width: relative;
+    background-color: grey;
+    color: #333333;
+}
+
+body.modo-escuro {
+    background: #212121;
+    color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    margin: relative;
+}
+
+header .logo,
+header .tema-claro-escuro {
+    width: 30px;
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .logo:hover,
+header .tema-claro-escuro:hover,
+main .cartao-pokemon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    padding: 25px;
+}
+
+main .listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-pokemon {
+    background-color: #d8d3dc;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+    text-align: center;
+}
+
+main .cartao-pokemon:hover {
+    background-color: #96d9d6;
+}
+
+.modo-escuro .cartao-pokemon {
+    background-color: #a8a8a8;
+}
+
+main .cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-pokemon .gif {
+    height: 70px;
+    width: 70px;
+}
+
+main .cartao-pokemon .tipos {
+    padding: 5px;
+    gap: 20px;
+    justify-content: space-between;
+    display: flex;
+}
+
+main .tipo-grama,
+.tipo-veneno,
+.tipo-agua,
+.tipo-fogo,
+.tipo-inseto {
+    padding: 8px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+.tipo-grama {
+    background-color: #7ac74c;
+}
+
+.tipo-veneno {
+    background-color: #df67ddfb
+}
+
+.tipo-fogo {
+    background-color: #ee8130;
+}
+
+.tipo-agua {
+    background-color: #6390f0;
+}
+
+.tipo-inseto {
+    background-color: #a6b91a;
+}
+
+main .cartao-pokemon p {
+    max-height: 80px;
+    overflow-y: scroll;
+    display: flex;
+}
+
+header{
+    position: sticky;
+    top:0;
+    background-color:grey;
+}
